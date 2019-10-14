@@ -1,0 +1,50 @@
+html,body{
+  margin:0;
+  height:100%;
+  background-color: RGB(138, 43, 226);
+}
+
+#head{
+  max-width: 22vw;
+  max-height: 50vh;
+  cursor: pointer;
+  margin:auto;
+  display: flex;
+  margin-top: 20%;
+  border-radius: 90%;
+  border-width: 2px;
+  border: black solid ;
+  background-color: white;
+  box-shadow: 4px 7px 18px rgba(255, 255, 255, 1);
+}
+#head{
+  /* animation: pop 1s ease; */
+  /* animation: spin 1s linear infinite; */
+  /* transition: all 0.5s ease ; */
+ transform:  translate3d(0, 0, 0);
+ backface-visibility: hidden;
+ perspective: 1000px;
+}
+#head {
+       animation-name: bounce;
+       animation-duration: 2s;
+      animation-iteration-count: infinite
+       /* animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1); */
+   }
+   @keyframes bounce {
+       0%   { transform: scale(1,1)      translateY(0); }
+       10%  { transform: scale(1.1,.9)   translateY(0); }
+       30%  { transform: scale(.9,1.1)   translateY(-100px); }
+       50%  { transform: scale(1.05,.95) translateY(0); }
+       57%  { transform: scale(1,1)      translateY(-7px); }
+       64%  { transform: scale(1,1)      translateY(0); }
+       100% { transform: scale(1,1)      translateY(0); }
+   }
+
+#music{
+  display:none;
+}
+
+.p5Canvas{
+  display:none;
+}

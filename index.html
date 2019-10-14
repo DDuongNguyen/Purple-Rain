@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Purple Rain</title>
+  <link rel='stylesheet' href='style.css'>
+  <script src='./anime.js'></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+  <img id='head' src='https://uploads-ssl.webflow.com/552eee97836806ae15a26bba/572050537549d2c5706b7080_prince.png' alt='prince'/>
+  <!-- <iframe id='music' src="./purple_rain.mp3" allow="autoplay" controls=0 class="hidden"></iframe> -->
+  <div id='audio'></div>
+  <script type="text/javascript" src="./rain.js"></script>
+  <script type="text/javascript" src="./drop.js"></script>
+  <script type="text/javascript" src="./face.js"></script>
+  <script>
+  anime({
+    targets:'#head',
+    duration:1000,
+    translateY:-100,
+    easing: 'easeInOutElastic',
+  })
+  </script>
+</head>
+<body>
+</body>
+</html>

@@ -3,7 +3,7 @@ function Drop() {
   this.x = random(width);
   this.y = random(-500, -50);
   this.z = random(0, 20);
-  this.len = map(this.z, 0, 20, 10, 20);
+  this.long = map(this.z, 0, 20, 10, 20);
   this.yspeed = map(this.z, 0, 20, 1, 20);
 
   this.fall = function () {
@@ -19,8 +19,8 @@ function Drop() {
 
   this.show = function () {
     var thick = map(this.z, 0, 20, 1, 3);
-    strokeWeight(thick);
-    stroke(138, 43, 226);
-    line(this.x, this.y, this.x, this.y + this.len);
+    strokeWeight(thick); //drop thickness
+    stroke(138, 43, 226); //color of the drop outline
+    line(this.x, this.y, this.x, this.y + this.long);
   }
 }
